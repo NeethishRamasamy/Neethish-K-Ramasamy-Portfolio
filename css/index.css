@@ -338,10 +338,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Navigation ----- */
+/* ----- Navbar ----- */
 /* --------------------------------------- */
 
-.nav {
+/* .nav {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
@@ -403,7 +403,67 @@ body:not(.user-is-tabbing) a:focus {
     right: 0;
     height: 2px;
     background: var(--pink);
+} */
+
+/* navbar 2 */
+.navbar {
+    background-color: #333;
+    border: none;
+    border-radius: 0;
 }
+
+.navbar-header {
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 3px;
+    margin: 3px 0;
+}
+
+.navbar-nav > li > a {
+    color: #fff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a {
+    background-color: #555;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #333;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: #555;
+}
+
+/* Active state for dropdown */
+.dropdown.active > a {
+    background-color: #555;
+}
+
 
 /* --------------------------------------- */
 /* ----- Header ----- */
@@ -734,6 +794,8 @@ body:not(.user-is-tabbing) a:focus {
 .card img {
     width: 100%;
     height: auto;
+    object-fit: cover;
+    display: block;
 }
 
 .card-content {
@@ -761,4 +823,10 @@ body:not(.user-is-tabbing) a:focus {
     .card {
         flex: 0 0 calc(100% - 20px);
     }
+}
+
+
+.img_size{
+    width: 5%;
+    height: 5%;
 }
