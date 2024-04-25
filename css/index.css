@@ -259,6 +259,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:hover,
 .btn--pink:focus {
     background: transparent;
+    color: #ccc;
 }
 
 .link__text {
@@ -294,6 +295,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:focus:after {
     right: 0;
     background: var(--pink);
+    color: #ccc;
 }
 
 .link__text span {
@@ -645,7 +647,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* cards */
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -703,5 +705,60 @@ body:not(.user-is-tabbing) a:focus {
 @media (max-width: 768px) {
     .card {
         flex-basis: calc(50% - 40px);
+    }
+} */
+
+
+/* cards 2 */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(100% - 20px);
     }
 }
