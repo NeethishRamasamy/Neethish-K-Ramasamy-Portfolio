@@ -623,6 +623,7 @@ body:not(.user-is-tabbing) a:focus {
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+        
     }
     
     .about__photo-container {
@@ -630,7 +631,13 @@ body:not(.user-is-tabbing) a:focus {
         margin: 0 var(--gutter-huge) 0 0;
         /* margin-left: 10%; */
         
+        
     }
+}
+
+.about__photo{
+    width: 500px;
+        height: 500px;
 }
 
 /* --------------------------------------- */
