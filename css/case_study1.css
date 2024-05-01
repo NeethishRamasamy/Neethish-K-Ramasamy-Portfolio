@@ -835,3 +835,7 @@ body:not(.user-is-tabbing) a:focus {
     padding-left: 40px;
     padding-right: 40px;
 }
+
+img{
+    border-radius: 10px;
+}
