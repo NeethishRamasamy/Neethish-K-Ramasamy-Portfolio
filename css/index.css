@@ -841,3 +841,7 @@ body:not(.user-is-tabbing) a:focus {
 p{
     text-align: justify;
 }
+
+img{
+    border-radius: 10px;
+}
