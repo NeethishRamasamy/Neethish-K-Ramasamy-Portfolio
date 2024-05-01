@@ -126,7 +126,7 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color:#E44D69;
+    color:#ffffff;
 }
 
 .heading-primary {
@@ -652,8 +652,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
-
-/* .contact__info {
+/* 
+.contact__info {
     max-width: var(--container-medium-width);
 } */
 
@@ -737,6 +737,8 @@ body:not(.user-is-tabbing) a:focus {
     /* list-style-type: square; */
     list-style-position: inside;
     margin-bottom: var(--gutter-normal);
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .left__code {
@@ -792,3 +794,44 @@ body:not(.user-is-tabbing) a:focus {
     opacity: 1;
 }
 
+
+    @media(max-width: 900px) {
+        .card {
+            align-items:center;
+        }
+    }
+
+    /* <!-- problem and solution part 2 --> */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .half {
+        width: 50%;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: justify; 
+    }
+
+    @media (max-width: 768px) {
+        .half {
+            width: 100%;
+        }
+    }
+    b{
+        color: var(--pink)
+    }
+    p{
+        text-align: justify;
+    }
+
+.overview p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.slick-carousel img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
